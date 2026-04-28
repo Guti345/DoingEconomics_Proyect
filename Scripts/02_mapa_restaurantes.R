@@ -46,10 +46,11 @@ INPUT_CSV   <- file.path(DATA_RAW_DIR, "restaurantes_mediterraneos_bogota.csv")
 BARRIOS_DIR <- file.path(DATA_RAW_DIR, "Barrios_Bogota")
 OUTPUT_MAP  <- file.path(GRAPHS_DIR,   "mapa_restaurantes_mediterraneos.html")
 OUTPUT_SHP  <- file.path(GRAPHS_DIR,   "restaurantes_mediterraneos_bogota.shp")
+OUTPUT_GPKG <- file.path(GRAPHS_DIR,   "restaurantes_mediterraneos_bogota.gpkg")
 
 # Nombre del campo de barrio en el shapefile — ajusta si difiere
 # Para inspeccionar columnas disponibles: names(st_read(list.files(BARRIOS_DIR, "*.shp", full.names=TRUE)[1]))
-CAMPO_BARRIO_LABEL <- "NOMBRE"
+CAMPO_BARRIO_LABEL <- "SCANOMBRE"
 
 cat("── Rutas ───────────────────────────────────────────────\n")
 cat(glue("  Input CSV   : {INPUT_CSV}\n"))
@@ -70,12 +71,6 @@ df <- read_csv(INPUT_CSV, show_col_types = FALSE) |>
     barrio       = ifelse(is.na(barrio) | barrio == "", "Sin datos", barrio),
     tipos        = ifelse(is.na(tipos), "", tipos),
     query_origen = ifelse(is.na(query_origen), "", query_origen),
-    # Estrellas visuales
-    estrellas = sapply(rating, function(r) {
-      if (is.na(r)) return("Sin calificación")
-      n <- round(r)
-      paste0(strrep("★", n), strrep("☆", 5 - n), "  ", r, " / 5")
-    }),
     # Clasificación por tipo de cocina
     cocina = case_when(
       grepl("grieg|greek",             tipos,        ignore.case = TRUE) ~ "Griega",
@@ -126,99 +121,73 @@ pal_cocina <- colorFactor(
 )
 
 # ── 4. POPUP HTML ─────────────────────────────────────────────────────────────
-# Muestra todas las columnas relevantes del CSV:
-# id | nombre | cocina | barrio | direccion | rating | num_reviews |
-# tipos | query_origen | google_maps_url
+# Usa htmltools::htmlEscape() para evitar que caracteres especiales
+# (&, <, >, comillas) en los datos rompan el HTML del popup.
+
+library(htmltools)
 
 make_popup <- function(id, nombre, cocina, barrio, direccion,
-                       rating, num_reviews, estrellas,
-                       tipos, query_origen, google_maps_url) {
-
-  reviews_txt  <- ifelse(is.na(num_reviews), "—", format(num_reviews, big.mark = "."))
-  tipos_txt    <- ifelse(tipos == "", "—", gsub(",", " ·", tipos))
-  maps_link    <- ifelse(
-    is.na(google_maps_url) | google_maps_url == "",
-    "",
-    glue('<a href="{google_maps_url}" target="_blank" ',
-         'style="color:#457b9d; text-decoration:none;">',
-         '🔗 Ver en Google Maps</a>')
+                       rating, num_reviews, tipos, google_maps_url) {
+  
+  # Escapar todos los campos de texto
+  nombre    <- htmlEscape(ifelse(is.na(nombre),    "-", nombre))
+  cocina    <- htmlEscape(ifelse(is.na(cocina),    "-", cocina))
+  barrio    <- htmlEscape(ifelse(is.na(barrio),    "Sin datos", barrio))
+  direccion <- htmlEscape(ifelse(is.na(direccion), "-", direccion))
+  tipos_txt <- htmlEscape(ifelse(is.na(tipos) | tipos == "", "Sin datos",
+                                 gsub("_", " ", tipos)))
+  
+  rating_txt   <- ifelse(is.na(rating),      "Sin datos", paste0(rating, " / 5"))
+  reviews_txt  <- ifelse(is.na(num_reviews), "Sin datos",
+                         format(as.integer(num_reviews), big.mark = "."))
+  
+  maps_link <- ifelse(
+    is.na(google_maps_url) | google_maps_url == "", "",
+    sprintf('<a href="%s" target="_blank">Ver en Google Maps</a>',
+            htmlEscape(google_maps_url))
   )
-
-  glue('
-  <div style="font-family:Arial,sans-serif; min-width:240px; max-width:300px; padding:4px;">
-
-    <!-- ENCABEZADO -->
-    <div style="background:#1d3557; color:white; padding:10px 12px;
-                border-radius:8px 8px 0 0; margin:-4px -4px 10px -4px;">
-      <div style="font-size:10px; opacity:.7; margin-bottom:2px;">#{id}</div>
-      <div style="font-size:15px; font-weight:bold; line-height:1.3;">{nombre}</div>
-      <span style="background:{pal_cocina(cocina)}; font-size:10px;
-                   padding:2px 8px; border-radius:10px; margin-top:5px;
-                   display:inline-block;">
-        {cocina}
-      </span>
-    </div>
-
-    <!-- DATOS -->
-    <table style="width:100%; font-size:12px; border-collapse:collapse; line-height:1.6;">
-      <tr>
-        <td style="color:#777; width:90px; padding:2px 0;">📍 Barrio</td>
-        <td style="font-weight:600;">{barrio}</td>
-      </tr>
-      <tr>
-        <td style="color:#777; padding:2px 0;">🏠 Dirección</td>
-        <td style="font-size:11px;">{direccion}</td>
-      </tr>
-      <tr>
-        <td style="color:#777; padding:2px 0;">⭐ Rating</td>
-        <td>{estrellas}</td>
-      </tr>
-      <tr>
-        <td style="color:#777; padding:2px 0;">💬 Reseñas</td>
-        <td>{reviews_txt}</td>
-      </tr>
-      <tr>
-        <td style="color:#777; padding:2px 0;">🍽️ Tipo</td>
-        <td style="font-size:11px;">{tipos_txt}</td>
-      </tr>
-      <tr>
-        <td style="color:#777; padding:2px 0;">🔎 Query</td>
-        <td style="font-size:11px; color:#555;">{query_origen}</td>
-      </tr>
-    </table>
-
-    <!-- LINK -->
-    <div style="margin-top:10px; padding-top:8px;
-                border-top:1px solid #eee; font-size:12px;">
-      {maps_link}
-    </div>
-  </div>
-  ')
+  
+  sprintf(
+    paste0(
+      '<div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.8;',
+      'min-width:200px;">',
+      '<b style="font-size:14px;">%s</b><br>',
+      'ID: %s<br>',
+      'Cocina: %s<br>',
+      'Barrio: %s<br>',
+      'Dirección: %s<br>',
+      'Rating: %s<br>',
+      'Reseñas: %s<br>',
+      'Tipo: %s<br>',
+      '%s',
+      '</div>'
+    ),
+    nombre, id, cocina, barrio, direccion,
+    rating_txt, reviews_txt, tipos_txt, maps_link
+  )
 }
 
 popups <- mapply(
   make_popup,
-  id             = df$id,
-  nombre         = df$nombre,
-  cocina         = df$cocina,
-  barrio         = df$barrio,
-  direccion      = df$direccion,
-  rating         = df$rating,
-  num_reviews    = df$num_reviews,
-  estrellas      = df$estrellas,
-  tipos          = df$tipos,
-  query_origen   = df$query_origen,
+  id              = df$id,
+  nombre          = df$nombre,
+  cocina          = df$cocina,
+  barrio          = df$barrio,
+  direccion       = df$direccion,
+  rating          = df$rating,
+  num_reviews     = df$num_reviews,
+  tipos           = df$tipos,
   google_maps_url = df$google_maps_url,
-  SIMPLIFY       = TRUE
+  SIMPLIFY        = TRUE
 )
 
 # ── 5. CONSTRUIR MAPA LEAFLET ─────────────────────────────────────────────────
 mapa <- leaflet() |>
-
+  
   # Tiles base
   addProviderTiles(providers$CartoDB.Positron,    group = "Claro") |>
   addProviderTiles(providers$Esri.WorldStreetMap, group = "Detallado") |>
-
+  
   # Shapefile de barrios de Bogotá
   addPolygons(
     data        = bogota_sf,
@@ -234,7 +203,7 @@ mapa <- leaflet() |>
       direction = "auto"
     )
   ) |>
-
+  
   # Puntos de restaurantes
   addCircleMarkers(
     data         = sf_rest,
@@ -245,6 +214,7 @@ mapa <- leaflet() |>
     weight       = 1.5,
     stroke       = TRUE,
     popup        = popups,
+    popupOptions = popupOptions(maxWidth = 300, closeOnClick = TRUE),
     label        = ~glue("#{id}  {nombre}"),
     labelOptions = labelOptions(
       style     = list("font-weight" = "500", "padding" = "3px 7px"),
@@ -258,7 +228,7 @@ mapa <- leaflet() |>
       spiderfyOnMaxZoom   = TRUE
     )
   ) |>
-
+  
   # Leyenda
   addLegend(
     position = "bottomright",
@@ -267,14 +237,14 @@ mapa <- leaflet() |>
     title    = "Tipo de cocina",
     opacity  = 0.9
   ) |>
-
+  
   # Control de capas
   addLayersControl(
     baseGroups    = c("Claro", "Detallado"),
     overlayGroups = c("Barrios", "Restaurantes"),
     options       = layersControlOptions(collapsed = FALSE)
   ) |>
-
+  
   # Buscador por nombre
   addSearchFeatures(
     targetGroups = "Restaurantes",
@@ -285,7 +255,7 @@ mapa <- leaflet() |>
       hideMarkerOnCollapse = TRUE
     )
   ) |>
-
+  
   setView(lng = -74.0721, lat = 4.7110, zoom = 11)
 
 # ── 6. GUARDAR HTML ───────────────────────────────────────────────────────────
@@ -293,6 +263,39 @@ saveWidget(mapa, file = OUTPUT_MAP, selfcontained = TRUE)
 cat(glue("\n✅ Mapa HTML guardado : {OUTPUT_MAP}\n"))
 cat(glue("   {nrow(df)} restaurantes | {length(unique(df$cocina))} tipos de cocina\n"))
 
-# ── 7. EXPORTAR SHAPEFILE ─────────────────────────────────────────────────────
-st_write(sf_rest, OUTPUT_SHP, delete_dsn = TRUE, quiet = TRUE)
+# ── 7. EXPORTAR ESPACIAL ──────────────────────────────────────────────────────
+# OPCIÓN A — GeoPackage (recomendado)
+#   ✅ Sin límite de 10 chars en nombres de columna
+#   ✅ Soporta UTF-8 nativamente (sin warning de encoding)
+#   ✅ Un solo archivo .gpkg (vs 4-6 archivos del .shp)
+
+st_write(sf_rest, OUTPUT_GPKG, delete_dsn = TRUE, quiet = TRUE)
+cat(glue("✅ GeoPackage guardado : {OUTPUT_GPKG}\n"))
+
+# OPCIÓN B — Shapefile (si necesitas compatibilidad con software legacy)
+#   Soluciona los dos warnings:
+#   1. Renombra columnas a ≤10 chars antes de escribir
+#   2. Fuerza encoding UTF-8 con layer_options
+
+sf_shp <- sf_rest |>
+  rename(
+    place_id  = place_id,       # 8  ✅
+    nombre    = nombre,         # 6  ✅
+    direccion = direccion,      # 9  ✅
+    rating    = rating,         # 6  ✅
+    n_reviews = num_reviews,    # 9  ✅  (era 11 → abreviado)
+    maps_url  = google_maps_url,# 8  ✅  (era 15 → abreviado)
+    tipos     = tipos,          # 5  ✅
+    q_origen  = query_origen,   # 8  ✅  (era 12 → abreviado)
+    barrio    = barrio,         # 6  ✅
+    cocina    = cocina          # 6  ✅
+  )
+
+st_write(
+  sf_shp,
+  OUTPUT_SHP,
+  delete_dsn    = TRUE,
+  quiet         = TRUE,
+  layer_options = "ENCODING=UTF-8"   # soluciona warning de tildes/ñ
+)
 cat(glue("✅ Shapefile guardado  : {OUTPUT_SHP}\n"))
