@@ -63,9 +63,10 @@ COLORES = {
     "Italiana":     "#2A9D8F",
     "Española":     "#E63946",
     "Griega":       "#457B9D",
+    "Árabe":        "#9B5DE5",
     "Mediterránea": "#F4A261",
 }
-
+ 
 def clasificar_cocina(tipos: str, query_origen: str) -> str:
     t = str(tipos).lower()
     q = str(query_origen).lower()
@@ -75,16 +76,20 @@ def clasificar_cocina(tipos: str, query_origen: str) -> str:
         return "Española"
     if "italian" in t or "italian" in q or "pizza" in q or "trattoria" in q:
         return "Italiana"
+    if ("arab" in t or "middle_eastern" in t or "lebanes" in t or "shawarma" in t
+            or "arab" in q or "libanés" in q or "libanes" in q
+            or "shawarma" in q or "beirut" in q or "falafel" in q):
+        return "Árabe"
     return "Mediterránea"
-
+ 
 # ─── 1. CARGAR CSV ────────────────────────────────────────────────────────────
 print("=" * 55)
 print("  MAPA INTERACTIVO — RESTAURANTES MEDITERRÁNEOS")
 print("=" * 55)
-
+ 
 if not INPUT_CSV.exists():
     raise FileNotFoundError(f"CSV no encontrado:\n  {INPUT_CSV}")
-
+ 
 df = pd.read_csv(INPUT_CSV, encoding="utf-8-sig")
 df = df.dropna(subset=["lat", "lon"]).copy()
 df["id"]          = df["id"].apply(lambda i: f"{int(i):03d}")
@@ -96,54 +101,54 @@ df["query_origen"]= df["query_origen"].fillna("").astype(str)
 df["cocina"]      = df.apply(
     lambda r: clasificar_cocina(r["tipos"], r["query_origen"]), axis=1
 )
-
+ 
 print(f"\n✅ Restaurantes cargados : {len(df)}")
 print(f"   Distribución por cocina:")
 for c, n in df["cocina"].value_counts().items():
     print(f"     {c:<15} : {n}")
-
+ 
 # ─── 2. CARGAR SHAPEFILE DE BARRIOS ───────────────────────────────────────────
 shp_files = list(BARRIOS_DIR.glob("*.shp"))
 if not shp_files:
     raise FileNotFoundError(
         f"No se encontró ningún .shp en:\n  {BARRIOS_DIR}"
     )
-
+ 
 barrios = gpd.read_file(shp_files[0]).to_crs(epsg=4326)
 print(f"\n✅ Shapefile cargado     : {shp_files[0].name}")
 print(f"   Polígonos             : {len(barrios)}")
 print(f"   Columnas              : {list(barrios.columns)}")
-
+ 
 if CAMPO_BARRIO not in barrios.columns:
     raise KeyError(
         f"\nCampo '{CAMPO_BARRIO}' no existe en el shapefile.\n"
         f"Columnas disponibles: {list(barrios.columns)}\n"
         f"Ajusta CAMPO_BARRIO en la línea 53."
     )
-
+ 
 # ─── 3. CONSTRUIR MAPA BASE ───────────────────────────────────────────────────
 mapa = folium.Map(
     location=[4.7110, -74.0721],
     zoom_start=11,
     tiles=None                    # tiles se agregan como capas intercambiables
 )
-
+ 
 # Tiles base
 folium.TileLayer(
     tiles="CartoDB positron",
     name="Claro",
     control=True
 ).add_to(mapa)
-
+ 
 folium.TileLayer(
     tiles="OpenStreetMap",
     name="Detallado",
     control=True
 ).add_to(mapa)
-
+ 
 # ─── 4. CAPA DE BARRIOS ───────────────────────────────────────────────────────
 barrios_layer = folium.FeatureGroup(name="Barrios", show=True)
-
+ 
 folium.GeoJson(
     data=barrios.__geo_interface__,
     style_function=lambda _: {
@@ -155,9 +160,9 @@ folium.GeoJson(
     highlight_function=lambda _: {},   # sin resaltado al hover
     interactive=False,                  # bloquea clic y tooltip
 ).add_to(barrios_layer)
-
+ 
 barrios_layer.add_to(mapa)
-
+ 
 # ─── 5. FUNCIÓN DE POPUP ──────────────────────────────────────────────────────
 def hacer_popup(row: pd.Series) -> str:
     """
@@ -167,7 +172,7 @@ def hacer_popup(row: pd.Series) -> str:
     """
     def esc(v):
         return html.escape(str(v)) if pd.notna(v) else "-"
-
+ 
     nombre    = esc(row["nombre"])
     rid       = esc(row["id"])
     cocina    = esc(row["cocina"])
@@ -176,14 +181,14 @@ def hacer_popup(row: pd.Series) -> str:
     rating    = f"{row['rating']} / 5" if pd.notna(row["rating"]) else "Sin datos"
     reviews   = f"{row['num_reviews']:,}".replace(",", ".") if row["num_reviews"] > 0 else "Sin datos"
     tipos     = esc(row["tipos"]).replace("_", " ") if row["tipos"] else "Sin datos"
-
+ 
     maps_link = (
         f'<a href="{html.escape(row["google_maps_url"])}" target="_blank">'
         f'Ver en Google Maps</a>'
         if pd.notna(row.get("google_maps_url")) and row["google_maps_url"] != ""
         else ""
     )
-
+ 
     return f"""
     <div style="font-family:Arial,sans-serif; font-size:13px;
                 line-height:1.8; min-width:210px;">
@@ -198,10 +203,10 @@ def hacer_popup(row: pd.Series) -> str:
         {maps_link}
     </div>
     """
-
+ 
 # ─── 6. CAPA DE RESTAURANTES — CLUSTER O PUNTOS INDIVIDUALES ─────────────────
 restaurantes_layer = folium.FeatureGroup(name="Restaurantes", show=True)
-
+ 
 if USE_CLUSTERS:
     # ── Modo cluster: agrupa puntos cercanos en burbujas numeradas ────────────
     print("\n🔵 Modo: CLUSTERS activado")
@@ -213,17 +218,17 @@ if USE_CLUSTERS:
         }
     )
     contenedor.add_to(restaurantes_layer)
-
+ 
 else:
     # ── Modo puntos: todos los puntos visibles al mismo tiempo ────────────────
     print("\n🟢 Modo: PUNTOS INDIVIDUALES activado")
     contenedor = restaurantes_layer   # los markers van directo a la capa
-
+ 
 for _, row in df.iterrows():
     color  = COLORES.get(row["cocina"], "#888888")
     popup  = folium.Popup(hacer_popup(row), max_width=320)
     label  = f"#{row['id']}  {row['nombre']}"
-
+ 
     folium.CircleMarker(
         location     = [row["lat"], row["lon"]],
         radius       = 7,
@@ -235,9 +240,9 @@ for _, row in df.iterrows():
         popup        = popup,
         tooltip      = label,
     ).add_to(contenedor)
-
+ 
 restaurantes_layer.add_to(mapa)
-
+ 
 # ─── 7. LEYENDA MANUAL ────────────────────────────────────────────────────────
 leyenda_html = """
 <div style="
@@ -260,13 +265,13 @@ leyenda_html = """
 </div>
 """
 mapa.get_root().html.add_child(folium.Element(leyenda_html))
-
+ 
 # ─── 8. CONTROL DE CAPAS ──────────────────────────────────────────────────────
 folium.LayerControl(position="topright", collapsed=False).add_to(mapa)
-
+ 
 # ─── 9. GUARDAR HTML ──────────────────────────────────────────────────────────
 mapa.save(str(OUTPUT_HTML))
-
+ 
 modo = "CLUSTERS" if USE_CLUSTERS else "PUNTOS INDIVIDUALES"
 print(f"\n✅ Mapa guardado [{modo}]: {OUTPUT_HTML}")
 print(f"   {len(df)} restaurantes | {df['cocina'].nunique()} tipos de cocina")
