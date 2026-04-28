@@ -115,6 +115,9 @@ QUERIES = [
     "comida española Bogotá",
     "tapas bar Bogotá",
     "trattoria Bogotá",
+    "greek street food Bogotá",
+    "mediterranean food Bogotá",
+    "spanish cuisine Bogotá",
 ]
 
 # Coordenadas centro de Bogotá + radio de búsqueda (25 km cubre toda la ciudad)
