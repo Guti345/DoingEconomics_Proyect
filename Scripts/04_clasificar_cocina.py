@@ -26,6 +26,7 @@ from pathlib import Path
 SCRIPT_DIR   = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 INPUT_CSV    = PROJECT_ROOT / "Data" / "Raw" / "restaurantes_mediterraneos_bogota.csv"
+OUTPUT_XLSX = PROJECT_ROOT / "Data" / "Raw" / "restaurantes_mediterraneos_bogota.xlsx"
 
 # ─── CONFIGURACIÓN ────────────────────────────────────────────────────────────
 # True  → reclasifica TODAS las filas (sobreescribe valores existentes)
@@ -142,7 +143,6 @@ if __name__ == "__main__":
         print("   df[df['cocina']=='Mediterránea'][['nombre','tipos','query_origen']]")
 
 # ─── EXPORTAR A EXCEL ─────────────────────────────────────────────────────────
-OUTPUT_XLSX = DATA_RAW_DIR / "restaurantes_mediterraneos_bogota.xlsx"
 
 df.to_excel(OUTPUT_XLSX, index=False, engine="openpyxl")
 print(f"\n💾 Excel guardado: {OUTPUT_XLSX}")
