@@ -69,7 +69,7 @@ COLORES = {
 def clasificar_cocina(tipos: str, query_origen: str) -> str:
     t = str(tipos).lower()
     q = str(query_origen).lower()
-    if "grieg" in t or "greek" in t or "grieg" in q:
+    if "grieg" in t or "greek" in t or "grieg" in q or "greek" in q:
         return "Griega"
     if "españ" in t or "spanish" in t or "españ" in q or "tapas" in q:
         return "Española"
