@@ -114,15 +114,14 @@ QUERIES = [
     "cocina italiana Bogotá",
     "comida española Bogotá",
     "tapas bar Bogotá",
-    "pizzeria italiana Bogotá",
     "trattoria Bogotá",
 ]
 
 # Coordenadas centro de Bogotá + radio de búsqueda (25 km cubre toda la ciudad)
 LOCATION_BIAS = {
     "circle": {
-        "center": {"latitude": 4.7110, "longitude": -74.0721},
-        "radius": 25000
+        "center": {"latitude": 4.6873, "longitude": -74.0578},
+        "radius": 17500
     }
 }
 
