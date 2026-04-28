@@ -26,7 +26,7 @@ from pathlib import Path
 SCRIPT_DIR   = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 INPUT_CSV    = PROJECT_ROOT / "Data" / "Raw" / "restaurantes_mediterraneos_bogota.csv"
-OUTPUT_XLSX = PROJECT_ROOT / "Data" / "Raw" / "restaurantes_mediterraneos_bogota.xlsx"
+OUTPUT_XLSX = PROJECT_ROOT / "Data" / "Raw" / "restaurantes_mediterraneos_bogota_classified.xlsx"
 
 # ─── CONFIGURACIÓN ────────────────────────────────────────────────────────────
 # True  → reclasifica TODAS las filas (sobreescribe valores existentes)
