@@ -1,0 +1,24 @@
+{
+  "month": "2026-04",
+  "total_requests": 33,
+  "sessions": [
+    {
+      "inicio": "2026-04-27T20:47:44.113832",
+      "requests_al_inicio": 0,
+      "fin": "2026-04-27T20:48:07.596014",
+      "requests_en_sesion": 9
+    },
+    {
+      "inicio": "2026-04-27T20:55:32.957595",
+      "requests_al_inicio": 9,
+      "fin": "2026-04-27T20:56:03.702748",
+      "requests_en_sesion": 12
+    },
+    {
+      "inicio": "2026-04-27T20:57:07.623009",
+      "requests_al_inicio": 21,
+      "fin": "2026-04-27T20:57:35.900629",
+      "requests_en_sesion": 12
+    }
+  ]
+}
