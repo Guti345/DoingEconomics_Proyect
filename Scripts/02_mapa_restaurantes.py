@@ -261,6 +261,7 @@ leyenda_html = """
   <span style="color:#E63946;">&#9632;</span> Española<br>
   <span style="color:#457B9D;">&#9632;</span> Griega<br>
   <span style="color:#2A9D8F;">&#9632;</span> Italiana<br>
+  <span style="color:#9B5DE5;">&#9632;</span> Árabe<br>
   <span style="color:#F4A261;">&#9632;</span> Mediterránea
 </div>
 """
