@@ -75,6 +75,7 @@ df <- read_csv(INPUT_CSV, show_col_types = FALSE) |>
     cocina = case_when(
       grepl("grieg|greek",             tipos,        ignore.case = TRUE) ~ "Griega",
       grepl("grieg",                   query_origen, ignore.case = TRUE) ~ "Griega",
+      grepl("greek",                   query_origen, ignore.case = TRUE) ~ "Griega",
       grepl("españ|spanish",           tipos,        ignore.case = TRUE) ~ "Española",
       grepl("españ|tapas",             query_origen, ignore.case = TRUE) ~ "Española",
       grepl("italian",                 tipos,        ignore.case = TRUE) ~ "Italiana",
