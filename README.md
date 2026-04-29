@@ -1,6 +1,8 @@
 # 🫒 Digitalización y Posicionamiento en el Mercado de Restaurantes Mediterráneos en Bogotá
 
 > Proyecto de investigación · Haciendo Economía 2026-1 · Universidad del Rosario
+
+
 > Elaborado por: Antonio Gutierrez y Jessica Gil
 > Fecha de actualización: Abril 2026
 
