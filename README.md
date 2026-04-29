@@ -1,14 +1,17 @@
 # 🫒 Digitalización y Posicionamiento en el Mercado de Restaurantes Mediterráneos en Bogotá
 
 > Proyecto de investigación · Haciendo Economía 2026-1 · Universidad del Rosario
+> Elaborado por: Antonio Gutierrez y Jessica Gil
+> Fecha de actualización: Abril 2026
 
 **Pregunta de investigación:** ¿Cuáles son las tecnologías que han transformado las estrategias de posicionamiento en el mercado de restaurantes mediterráneos en Bogotá?
+
 
 ---
 
 ## Descripción
 
-Este proyecto caracteriza el mercado de restaurantes mediterráneos en Bogotá y analiza la relación entre la adopción de estrategias digitales de posicionamiento y la visibilidad de los establecimientos en plataformas digitales.
+> Este proyecto caracteriza el mercado de restaurantes mediterráneos en Bogotá y analiza la relación entre la adopción de estrategias digitales de posicionamiento y la visibilidad de los establecimientos en plataformas digitales.
 ---
 
 ## Estructura del repositorio
