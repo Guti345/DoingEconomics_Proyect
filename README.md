@@ -4,6 +4,8 @@
 
 
 > Elaborado por: Antonio Gutierrez y Jessica Gil
+
+
 > Fecha de actualización: Abril 2026
 
 **Pregunta de investigación:** ¿Cuáles son las tecnologías que han transformado las estrategias de posicionamiento en el mercado de restaurantes mediterráneos en Bogotá?
