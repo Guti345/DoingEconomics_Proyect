@@ -1,0 +1,197 @@
+{
+  "location_id": "299430",
+  "name": "Cosmos 100 Hotel & Centro de Convenciones",
+  "description": "Cosmos 100 - Hotel y Centro de Convenciones. Con 300 habitaciones, 23 salones para eventos con capacidad de 3,000 personas simultáneamente, Piscina cubierta, Gimnasio y Spa. Disfrute de nuestro Centro Gastronomico con 5 diferentes restaurantes que ofrecen diversidad de menús como son: 1.Restaurante Primavera con menú internacional que sirve desayunos, almuerzo y cenas con buffer o menú a la carta. Restaurante 2. Restaurante Mei-Kei ofrece a la carta un suculento menú de comida oriental y sushi. 3. Café Gourmet: Con acceso desde la calle 100, ofrece menú diferente cada día incluyendo variedad de pizzas, sanduches y exquisita panadería. 4. Gaviero Tapas Bar: Abierto para almuerzo, Happy Hour y Cena. Bar con agradable ambiente y con acceso desde la Calle 100. 5. Bar Gaugin: Disfrute del ambiente relajado de este piano-bar al interior del Hotel cosmos 100.",
+  "web_url": "https://www.tripadvisor.es/Hotel_Review-g294074-d299430-Reviews-Cosmos_100_Hotel_Centro_De_Convenciones-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Ac. 100 #19a- 83",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110221",
+    "address_string": "Ac. 100 #19a- 83, Bogotá 110221 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.686003",
+  "longitude": "-74.05387",
+  "timezone": "America/Bogota",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d299430-Cosmos_100_Hotel_Centro_De_Convenciones-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "Nº 70 de 640 hoteles en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "640",
+    "ranking": "70"
+  },
+  "rating": "4.3",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "1231",
+  "review_rating_count": {
+    "1": "40",
+    "2": "44",
+    "3": "133",
+    "4": "350",
+    "5": "664"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_location",
+      "localized_name": "Ubicación",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.3"
+    },
+    "1": {
+      "name": "rate_sleep",
+      "localized_name": "Calidad del sueño",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.2"
+    },
+    "2": {
+      "name": "rate_room",
+      "localized_name": "Habitaciones",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.3"
+    },
+    "3": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.3"
+    },
+    "4": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.1"
+    },
+    "5": {
+      "name": "rate_cleanliness",
+      "localized_name": "Limpieza",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.5"
+    }
+  },
+  "photo_count": "428",
+  "see_all_photos": "https://www.tripadvisor.es/Hotel_Review-g294074-d299430-m66827-Reviews-Cosmos_100_Hotel_Centro_De_Convenciones-Bogota.html#photos",
+  "price_level": "€",
+  "amenities": [
+    "Piscina",
+    "Internet",
+    "Internet gratuito",
+    "Restaurante",
+    "Wifi",
+    "Wifi gratuito",
+    "Centro de negocios",
+    "Gimnasio",
+    "Servicio de habitaciones",
+    "Suites",
+    "Salas de reuniones",
+    "Acceso para discapacitados",
+    "Bar/Salón",
+    "Spa",
+    "Desayuno incluido",
+    "Limpieza en seco",
+    "Habitaciones de no fumadores",
+    "Servicio de lavandería",
+    "Conserje",
+    "Sala de banquetes",
+    "Habitaciones familiares",
+    "Personal multilingüe",
+    "Wifi pública",
+    "Minibar",
+    "Salas de conferencias",
+    "Caja fuerte",
+    "Piscina en la azotea",
+    "Televisor de pantalla plana",
+    "Desayuno bufé",
+    "Piscina cubierta",
+    "Desayuno disponible",
+    "Espacio para guardar el equipaje",
+    "Servicio de desayuno en la habitación",
+    "Inglés",
+    "Vestuarios en sala de fitness o spa",
+    "Recepción abierta 24 horas",
+    "Servicio de planchado",
+    "Masaje",
+    "Garaje para aparcar",
+    "Aparcamiento privado de pago dentro del recinto",
+    "Español",
+    "Piscina climatizada",
+    "Aparcamiento",
+    "Instalaciones para huéspedes con problemas de movilidad",
+    "Sauna",
+    "Habitación hipoalergénica",
+    "Suite nupcial",
+    "Alquiler de coches",
+    "Hammam (baño turco)",
+    "Prensa",
+    "Servicio de lustrado de zapatos",
+    "Menús de dieta especiales"
+  ],
+  "category": {
+    "name": "hotel",
+    "localized_name": "Hotel"
+  },
+  "subcategory": [
+    {
+      "name": "hotel",
+      "localized_name": "Hotel"
+    }
+  ],
+  "styles": [
+    "De gama media",
+    "Moderno"
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "714"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "182"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "79"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "127"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "86"
+    }
+  ],
+  "awards": [
+    {
+      "award_type": "Travelers Choice",
+      "year": "2025",
+      "images": {
+        "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png",
+        "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png",
+        "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2025_L.png"
+      },
+      "categories": [],
+      "display_name": "Travelers Choice"
+    }
+  ]
+}

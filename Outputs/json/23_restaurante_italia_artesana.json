@@ -1,0 +1,240 @@
+{
+  "location_id": "23099531",
+  "name": "Italia Artesana",
+  "description": "“ENAMORADOS DE ITALIA.” Traer a la pequeña Italia a Bogotá, para deleitar a nuestros comensales como ella lo hace con nosotros.",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d23099531-Reviews-Italia_Artesana-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "calle 119B · 6A - 18",
+    "street2": "Usaquén",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110111",
+    "address_string": "calle 119B · 6A - 18 Usaquén, Bogotá 110111 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.696435",
+  "longitude": "-74.030815",
+  "timezone": "America/Bogota",
+  "email": "adm.italiaartesana@gmail.com",
+  "phone": "+57 324 650 1930",
+  "website": "http://italiaartesanacol.com/",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d23099531-Italia_Artesana-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 1.261 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "1261"
+  },
+  "rating": "3.9",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+  "num_reviews": "16",
+  "review_rating_count": {
+    "1": "2",
+    "2": "2",
+    "3": "1",
+    "4": "1",
+    "5": "10"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss1.5.svg",
+      "value": "1.5"
+    },
+    "1": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss2.5.svg",
+      "value": "2.5"
+    },
+    "2": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss2.0.svg",
+      "value": "2.0"
+    }
+  },
+  "photo_count": "34",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d23099531-m66827-Reviews-Italia_Artesana-Bogota.html#photos",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1200"
+        },
+        "close": {
+          "day": 1,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1200"
+        },
+        "close": {
+          "day": 2,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1200"
+        },
+        "close": {
+          "day": 3,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1200"
+        },
+        "close": {
+          "day": 4,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1200"
+        },
+        "close": {
+          "day": 7,
+          "time": "1700"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 12:00 - 22:00",
+      "Tuesday: 12:00 - 22:00",
+      "Wednesday: 12:00 - 22:00",
+      "Thursday: 12:00 - 22:00",
+      "Friday: 12:00 - 22:00",
+      "Saturday: 12:00 - 22:00",
+      "Sunday: 12:00 - 17:00"
+    ]
+  },
+  "features": [
+    "Acepta tarjetas de crédito",
+    "A domicilio",
+    "Pagos digitales",
+    "Estilo familiar",
+    "Wifi gratuito",
+    "Bar completo",
+    "Tronas disponibles",
+    "Música en directo",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa",
+    "Para llevar",
+    "Aparcacoches",
+    "Vino y cerveza"
+  ],
+  "cuisine": [
+    {
+      "name": "italian",
+      "localized_name": "Italiana"
+    },
+    {
+      "name": "bar",
+      "localized_name": "Bar"
+    },
+    {
+      "name": "pizza",
+      "localized_name": "Pizza"
+    },
+    {
+      "name": "cafe",
+      "localized_name": "Café"
+    },
+    {
+      "name": "international",
+      "localized_name": "Internacional"
+    },
+    {
+      "name": "mediterranean",
+      "localized_name": "Mediterránea"
+    },
+    {
+      "name": "pub",
+      "localized_name": "Pub"
+    },
+    {
+      "name": "wine_bar",
+      "localized_name": "Vinoteca"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "1"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "4"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "1"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "5"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "3"
+    }
+  ],
+  "awards": []
+}

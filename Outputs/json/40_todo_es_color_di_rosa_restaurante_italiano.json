@@ -1,0 +1,210 @@
+{
+  "location_id": "25092396",
+  "name": "Todo Es Color Di Rosa",
+  "description": "Todo Es Color Di Rosa / Restaurante Italiano  es el destino ideal para quienes buscan elevar cada cena con estilo, sabor y sofisticación. Inspirados en la elegancia italiana combinada con un ambiente vibrante y chic, ofrecemos pastas hechas a mano, platos de autor, coctelería selecta y postres irresistibles, todo en un espacio decorado con tonos rosas que invita al disfrute visual. Ubicados en Atlantis, Bogotá, somos el escenario perfecto para cumpleaños, cenas románticas o planes especiales con amig@s. Aquí cada detalle importa: sabor auténtico, servicio excepcional y atmósfera que convierte la mesa en experiencia. Reserva ya y vive lo mejor de Italia con glamour.",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d25092396-Reviews-Todo_Es_Color_Di_Rosa-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Calle 81 #13-05",
+    "street2": "4th Floor",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110221",
+    "address_string": "Calle 81 #13-05 4th Floor, Bogotá 110221 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.666122",
+  "longitude": "-74.055824",
+  "timezone": "America/Bogota",
+  "phone": "+57 322 7256479",
+  "website": "http://www.todoescolordirosa.com",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d25092396-Todo_Es_Color_Di_Rosa-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 28 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "28"
+  },
+  "rating": "4.9",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/5.0-66827-5.svg",
+  "num_reviews": "2573",
+  "review_rating_count": {
+    "1": "18",
+    "2": "8",
+    "3": "22",
+    "4": "71",
+    "5": "2454"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+      "value": "4.9"
+    },
+    "1": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+      "value": "4.9"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+      "value": "4.9"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+      "value": "4.8"
+    }
+  },
+  "photo_count": "1263",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d25092396-m66827-Reviews-Todo_Es_Color_Di_Rosa-Bogota.html#photos",
+  "price_level": "€€€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1200"
+        },
+        "close": {
+          "day": 1,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1200"
+        },
+        "close": {
+          "day": 2,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1200"
+        },
+        "close": {
+          "day": 3,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1200"
+        },
+        "close": {
+          "day": 4,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1200"
+        },
+        "close": {
+          "day": 7,
+          "time": "1800"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 12:00 - 23:00",
+      "Tuesday: 12:00 - 23:00",
+      "Wednesday: 12:00 - 23:00",
+      "Thursday: 12:00 - 23:00",
+      "Friday: 12:00 - 23:00",
+      "Saturday: 12:00 - 23:00",
+      "Sunday: 12:00 - 18:00"
+    ]
+  },
+  "features": [
+    "Bar completo",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa",
+    "Parking gratis/reducido con validación de ticket",
+    "Acceso para discapacitados"
+  ],
+  "cuisine": [
+    {
+      "name": "italian",
+      "localized_name": "Italiana"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "32"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "740"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "35"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "746"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "797"
+    }
+  ],
+  "awards": []
+}

@@ -1,0 +1,268 @@
+{
+  "location_id": "2214888",
+  "name": "La Tapería",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d2214888-Reviews-La_Taperia-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Calle 27 bis #6-51",
+    "street2": "Pasaje Santa Cruz de Mompox",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "1103111",
+    "address_string": "Calle 27 bis #6-51 Pasaje Santa Cruz de Mompox, Bogotá 1103111 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.614546",
+  "longitude": "-74.06888",
+  "timezone": "America/Bogota",
+  "email": "info@lataperia.co",
+  "phone": "+57 319 4896949",
+  "website": "http://www.lataperia.co/",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d2214888-La_Taperia-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 247 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "247"
+  },
+  "rating": "4.3",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "419",
+  "review_rating_count": {
+    "1": "18",
+    "2": "19",
+    "3": "22",
+    "4": "125",
+    "5": "235"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.6"
+    },
+    "1": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.5"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.4"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.2"
+    }
+  },
+  "photo_count": "151",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d2214888-m66827-Reviews-La_Taperia-Bogota.html#photos",
+  "price_level": "€€ - €€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1200"
+        },
+        "close": {
+          "day": 1,
+          "time": "1600"
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "time": "1800"
+        },
+        "close": {
+          "day": 1,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1200"
+        },
+        "close": {
+          "day": 2,
+          "time": "1600"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1800"
+        },
+        "close": {
+          "day": 2,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1200"
+        },
+        "close": {
+          "day": 3,
+          "time": "1600"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1800"
+        },
+        "close": {
+          "day": 3,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1200"
+        },
+        "close": {
+          "day": 4,
+          "time": "1600"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1800"
+        },
+        "close": {
+          "day": 4,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1200"
+        },
+        "close": {
+          "day": 7,
+          "time": "1800"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 12:00 - 16:00,  18:00 - 23:00",
+      "Tuesday: 12:00 - 16:00,  18:00 - 23:00",
+      "Wednesday: 12:00 - 16:00,  18:00 - 23:00",
+      "Thursday: 12:00 - 16:00,  18:00 - 23:00",
+      "Friday: 12:00 - 00:00",
+      "Saturday: 12:00 - 00:00",
+      "Sunday: 12:00 - 18:00"
+    ]
+  },
+  "features": [
+    "American Express",
+    "Acepta tarjetas de crédito",
+    "Mastercard",
+    "Visa",
+    "Wifi gratuito",
+    "Bar completo",
+    "Música en directo",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa",
+    "Para llevar"
+  ],
+  "cuisine": [
+    {
+      "name": "mediterranean",
+      "localized_name": "Mediterránea"
+    },
+    {
+      "name": "european",
+      "localized_name": "Europea"
+    },
+    {
+      "name": "spanish",
+      "localized_name": "Española"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [
+    {
+      "name": "sit_down",
+      "localized_name": "Sit down"
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "18"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "116"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "10"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "64"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "144"
+    }
+  ],
+  "awards": []
+}

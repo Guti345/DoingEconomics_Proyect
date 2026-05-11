@@ -1,0 +1,92 @@
+{
+  "location_id": "27151079",
+  "name": "Filiká Cocina Griega",
+  "description": "Auténtica comida griega",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d27151079-Reviews-Filika_Cocina_Griega-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Calle 68 No.6 - 39",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "address_string": "Calle 68 No.6 - 39, Bogotá Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.650906",
+  "longitude": "-74.057396",
+  "timezone": "America/Bogota",
+  "phone": "+57 313 4542073",
+  "website": "https://www.filikacocinagriega.com",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d27151079-Filika_Cocina_Griega-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 2.216 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "2216"
+  },
+  "rating": "5.0",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/5.0-66827-5.svg",
+  "num_reviews": "1",
+  "review_rating_count": {
+    "1": "0",
+    "2": "0",
+    "3": "0",
+    "4": "0",
+    "5": "1"
+  },
+  "subratings": {},
+  "photo_count": "8",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d27151079-m66827-Reviews-Filika_Cocina_Griega-Bogota.html#photos",
+  "features": [],
+  "cuisine": [
+    {
+      "name": "greek",
+      "localized_name": "Griega"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "0"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "0"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "0"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "1"
+    }
+  ],
+  "awards": []
+}

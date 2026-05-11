@@ -1,0 +1,176 @@
+{
+  "location_id": "27502790",
+  "name": "Griego Rooftop",
+  "web_url": "https://www.tripadvisor.es/Attraction_Review-g294074-d27502790-Reviews-Griego_Rooftop-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Calle 84a# 12A-35 - Piso 4/5",
+    "street2": "Chapinero",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "address_string": "Calle 84a# 12A-35 - Piso 4/5 Chapinero, Bogotá Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.668385",
+  "longitude": "-74.05382",
+  "timezone": "America/Bogota",
+  "website": "https://www.instagram.com/griegorooftop/?hl=es",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d27502790-Griego_Rooftop-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "65 de 288 Vida nocturna en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "288",
+    "ranking": "65"
+  },
+  "rating": "4.5",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "2",
+  "review_rating_count": {
+    "1": "0",
+    "2": "0",
+    "3": "0",
+    "4": "1",
+    "5": "1"
+  },
+  "photo_count": "9",
+  "see_all_photos": "https://www.tripadvisor.es/Attraction_Review-g294074-d27502790-m66827-Reviews-Griego_Rooftop-Bogota.html#photos",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 2,
+          "time": "2000"
+        },
+        "close": {
+          "day": 2,
+          "time": "0500"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "2000"
+        },
+        "close": {
+          "day": 3,
+          "time": "0500"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "2000"
+        },
+        "close": {
+          "day": 4,
+          "time": "0500"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "2000"
+        },
+        "close": {
+          "day": 5,
+          "time": "0500"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "2000"
+        },
+        "close": {
+          "day": 6,
+          "time": "0500"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "2000"
+        },
+        "close": {
+          "day": 7,
+          "time": "0500"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: Closed",
+      "Tuesday: 20:00 - 05:00",
+      "Wednesday: 20:00 - 05:00",
+      "Thursday: 20:00 - 05:00",
+      "Friday: 20:00 - 05:00",
+      "Saturday: 20:00 - 05:00",
+      "Sunday: 20:00 - 05:00"
+    ]
+  },
+  "category": {
+    "name": "attraction",
+    "localized_name": "Atracción"
+  },
+  "subcategory": [
+    {
+      "name": "nightlife",
+      "localized_name": "Vida nocturna"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Nightlife",
+      "localized_name": "Vida nocturna",
+      "categories": [
+        {
+          "name": "Bars & Clubs",
+          "localized_name": "Bares y discotecas"
+        },
+        {
+          "name": "Dance Clubs & Discos",
+          "localized_name": "Discotecas y salas de baile"
+        }
+      ]
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "0"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "1"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "0"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "1"
+    }
+  ],
+  "awards": []
+}

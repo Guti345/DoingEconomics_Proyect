@@ -1,0 +1,199 @@
+{
+  "location_id": "25246580",
+  "name": "Santorini Mediterranean Rooftop",
+  "description": "INSPIRADO EN LAS TARDES A LA ORILLA DEL MEDITERRÁNEO Ofrecemos una experiencia mixológica y gastronómica mediterránea, donde podrás disfrutar con amigos y familia de una imponente vista de la ciudad. Te acompañarán shows, música en vivo y el recuerdo de una noche que no olvidarás",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d25246580-Reviews-Santorini_Mediterranean_Rooftop-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Ac. 85 # 12 - 66",
+    "street2": "15th Floor",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110221",
+    "address_string": "Ac. 85 # 12 - 66 15th Floor, Bogotá 110221 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.669104",
+  "longitude": "-74.05318",
+  "timezone": "America/Bogota",
+  "email": "info@grupoaltasvistas.com",
+  "phone": "+57 300 6934496",
+  "website": "https://santorinirooftop.com/",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d25246580-Santorini_Mediterranean_Rooftop-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 535 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "535"
+  },
+  "rating": "3.9",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+  "num_reviews": "114",
+  "review_rating_count": {
+    "1": "23",
+    "2": "6",
+    "3": "7",
+    "4": "9",
+    "5": "69"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+      "value": "3.6"
+    },
+    "1": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+      "value": "3.4"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+      "value": "3.5"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+      "value": "3.3"
+    }
+  },
+  "photo_count": "72",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d25246580-m66827-Reviews-Santorini_Mediterranean_Rooftop-Bogota.html#photos",
+  "price_level": "€€€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 2,
+          "time": "1800"
+        },
+        "close": {
+          "day": 2,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1800"
+        },
+        "close": {
+          "day": 3,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1800"
+        },
+        "close": {
+          "day": 4,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "0030"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "0030"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1000"
+        },
+        "close": {
+          "day": 7,
+          "time": "1800"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: Closed",
+      "Tuesday: 18:00 - 23:00",
+      "Wednesday: 18:00 - 23:00",
+      "Thursday: 18:00 - 23:00",
+      "Friday: 12:00 - 00:30",
+      "Saturday: 12:00 - 00:30",
+      "Sunday: 10:00 - 18:00"
+    ]
+  },
+  "features": [
+    "Bar completo",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa"
+  ],
+  "cuisine": [
+    {
+      "name": "mediterranean",
+      "localized_name": "Mediterránea"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "4"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "34"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "2"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "28"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "44"
+    }
+  ],
+  "awards": []
+}

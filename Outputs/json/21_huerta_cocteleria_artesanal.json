@@ -1,0 +1,158 @@
+{
+  "location_id": "26627757",
+  "name": "Huerta",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d26627757-Reviews-Huerta-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Carrera 12 #83-64",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110211",
+    "address_string": "Carrera 12 #83-64, Bogotá 110211 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.66718",
+  "longitude": "-74.05292",
+  "timezone": "America/Bogota",
+  "phone": "+57 301 7854934",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d26627757-Huerta-Bogota.html?m=66827",
+  "num_reviews": "0",
+  "subratings": {},
+  "photo_count": "0",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d26627757-m66827-Reviews-Huerta-Bogota.html#photos",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1800"
+        },
+        "close": {
+          "day": 1,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1800"
+        },
+        "close": {
+          "day": 2,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1800"
+        },
+        "close": {
+          "day": 3,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1800"
+        },
+        "close": {
+          "day": 4,
+          "time": "0000"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1800"
+        },
+        "close": {
+          "day": 5,
+          "time": "0300"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1800"
+        },
+        "close": {
+          "day": 6,
+          "time": "0300"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1800"
+        },
+        "close": {
+          "day": 7,
+          "time": "2200"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 18:00 - 00:00",
+      "Tuesday: 18:00 - 00:00",
+      "Wednesday: 18:00 - 00:00",
+      "Thursday: 18:00 - 00:00",
+      "Friday: 18:00 - 03:00",
+      "Saturday: 18:00 - 03:00",
+      "Sunday: 18:00 - 22:00"
+    ]
+  },
+  "features": [],
+  "cuisine": [
+    {
+      "name": "fusion",
+      "localized_name": "Fusión"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "0"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "0"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "0"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "0"
+    }
+  ],
+  "awards": []
+}

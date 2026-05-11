@@ -1,0 +1,225 @@
+{
+  "location_id": "6378693",
+  "name": "Cacio & Pepe Taverna Italiana",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d6378693-Reviews-Cacio_Pepe_Taverna_Italiana-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Carrera 11 No. 89-38",
+    "street2": "Urban plaza",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110221",
+    "address_string": "Carrera 11 No. 89-38 Urban plaza, Bogotá 110221 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.671863",
+  "longitude": "-74.049255",
+  "timezone": "America/Bogota",
+  "email": "contacto@takami.co",
+  "phone": "+57 1 6447766",
+  "website": "http://takami.co/cacio-pepe/",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d6378693-Cacio_Pepe_Taverna_Italiana-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 142 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "142"
+  },
+  "rating": "4.3",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "518",
+  "review_rating_count": {
+    "1": "9",
+    "2": "20",
+    "3": "46",
+    "4": "179",
+    "5": "264"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.5"
+    },
+    "1": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.4"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.4"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.1"
+    }
+  },
+  "photo_count": "233",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d6378693-m66827-Reviews-Cacio_Pepe_Taverna_Italiana-Bogota.html#photos",
+  "price_level": "€€€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1200"
+        },
+        "close": {
+          "day": 1,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1200"
+        },
+        "close": {
+          "day": 2,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1200"
+        },
+        "close": {
+          "day": 3,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1200"
+        },
+        "close": {
+          "day": 4,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "2300"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1200"
+        },
+        "close": {
+          "day": 7,
+          "time": "2100"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 12:00 - 22:00",
+      "Tuesday: 12:00 - 22:00",
+      "Wednesday: 12:00 - 22:00",
+      "Thursday: 12:00 - 22:00",
+      "Friday: 12:00 - 23:00",
+      "Saturday: 12:00 - 23:00",
+      "Sunday: 12:00 - 21:00"
+    ]
+  },
+  "features": [
+    "Acepta tarjetas de crédito",
+    "Wifi gratuito",
+    "Bar completo",
+    "Tronas disponibles",
+    "Terraza exterior",
+    "Aparcamiento disponible",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa",
+    "Para llevar",
+    "Aparcacoches",
+    "Acceso para discapacitados"
+  ],
+  "cuisine": [
+    {
+      "name": "italian",
+      "localized_name": "Italiana"
+    },
+    {
+      "name": "european",
+      "localized_name": "Europea"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [
+    {
+      "name": "sit_down",
+      "localized_name": "Sit down"
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "64"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "108"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "9"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "117"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "146"
+    }
+  ],
+  "awards": []
+}

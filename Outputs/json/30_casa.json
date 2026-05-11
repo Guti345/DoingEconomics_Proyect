@@ -1,0 +1,216 @@
+{
+  "location_id": "3139053",
+  "name": "Casa",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d3139053-Reviews-Casa-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Carrera 13 # 85-24",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "06089",
+    "address_string": "Carrera 13 # 85-24, Bogotá 06089 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.669354",
+  "longitude": "-74.053406",
+  "timezone": "America/Bogota",
+  "phone": "+57 1 2363755",
+  "website": "http://restaurante-casa.com",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d3139053-Casa-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 231 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "231"
+  },
+  "rating": "4.3",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "253",
+  "review_rating_count": {
+    "1": "6",
+    "2": "4",
+    "3": "25",
+    "4": "81",
+    "5": "137"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.4"
+    },
+    "1": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.4"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.2"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+      "value": "4.0"
+    }
+  },
+  "photo_count": "97",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d3139053-m66827-Reviews-Casa-Bogota.html#photos",
+  "price_level": "€€€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "0900"
+        },
+        "close": {
+          "day": 1,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "0900"
+        },
+        "close": {
+          "day": 2,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "0900"
+        },
+        "close": {
+          "day": 3,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "0900"
+        },
+        "close": {
+          "day": 4,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "0900"
+        },
+        "close": {
+          "day": 5,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "0900"
+        },
+        "close": {
+          "day": 6,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "0900"
+        },
+        "close": {
+          "day": 7,
+          "time": "2100"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 09:00 - 21:00",
+      "Tuesday: 09:00 - 21:00",
+      "Wednesday: 09:00 - 21:00",
+      "Thursday: 09:00 - 21:00",
+      "Friday: 09:00 - 21:00",
+      "Saturday: 09:00 - 21:00",
+      "Sunday: 09:00 - 21:00"
+    ]
+  },
+  "features": [
+    "Wifi gratuito",
+    "Bar completo",
+    "Terraza exterior",
+    "Restaurante privado",
+    "Reservas",
+    "Capacidad",
+    "Sirve alcohol",
+    "Servicio de mesa",
+    "Acceso para discapacitados"
+  ],
+  "cuisine": [
+    {
+      "name": "mediterranean",
+      "localized_name": "Mediterránea"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [
+    {
+      "name": "sit_down",
+      "localized_name": "Sit down"
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "29"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "60"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "2"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "49"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "81"
+    }
+  ],
+  "awards": []
+}

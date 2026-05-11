@@ -1,0 +1,227 @@
+{
+  "location_id": "16690165",
+  "name": "La Vita è Bella",
+  "description": "Cocina rústica italiana en un ambiente moderno. Variedad en cócteles y vinos.",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d16690165-Reviews-La_Vita_e_Bella-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Avenida 19 #100-52",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110111",
+    "address_string": "Avenida 19 #100-52, Bogotá 110111 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.686753",
+  "longitude": "-74.05168",
+  "timezone": "America/Bogota",
+  "email": "lavitaebellacb@gmail.com",
+  "phone": "+57 1 9272802",
+  "website": "http://lavitaebellavlc.com/restaurante",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d16690165-La_Vita_e_Bella-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 735 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "735"
+  },
+  "rating": "4.5",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+  "num_reviews": "26",
+  "review_rating_count": {
+    "1": "3",
+    "2": "0",
+    "3": "0",
+    "4": "2",
+    "5": "21"
+  },
+  "subratings": {
+    "0": {
+      "name": "rate_food",
+      "localized_name": "Comida",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.5"
+    },
+    "1": {
+      "name": "rate_atmosphere",
+      "localized_name": "Ambiente",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.3"
+    },
+    "2": {
+      "name": "rate_service",
+      "localized_name": "Servicio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.5"
+    },
+    "3": {
+      "name": "rate_value",
+      "localized_name": "Calidad/precio",
+      "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+      "value": "4.3"
+    }
+  },
+  "photo_count": "47",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d16690165-m66827-Reviews-La_Vita_e_Bella-Bogota.html#photos",
+  "price_level": "€€ - €€€",
+  "hours": {
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "time": "1200"
+        },
+        "close": {
+          "day": 1,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "time": "1200"
+        },
+        "close": {
+          "day": 2,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "time": "1200"
+        },
+        "close": {
+          "day": 3,
+          "time": "2100"
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "time": "1200"
+        },
+        "close": {
+          "day": 4,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "time": "1200"
+        },
+        "close": {
+          "day": 5,
+          "time": "2230"
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "time": "1200"
+        },
+        "close": {
+          "day": 6,
+          "time": "2200"
+        }
+      },
+      {
+        "open": {
+          "day": 7,
+          "time": "1200"
+        },
+        "close": {
+          "day": 7,
+          "time": "1800"
+        }
+      }
+    ],
+    "weekday_text": [
+      "Monday: 12:00 - 21:00",
+      "Tuesday: 12:00 - 21:00",
+      "Wednesday: 12:00 - 21:00",
+      "Thursday: 12:00 - 22:00",
+      "Friday: 12:00 - 22:30",
+      "Saturday: 12:00 - 22:00",
+      "Sunday: 12:00 - 18:00"
+    ]
+  },
+  "features": [
+    "American Express",
+    "Acepta tarjetas de crédito",
+    "Mastercard",
+    "Visa",
+    "A domicilio",
+    "Wifi gratuito",
+    "Bar completo",
+    "Terraza exterior",
+    "Reservas",
+    "Capacidad",
+    "Servicio de mesa",
+    "Para llevar",
+    "Televisión",
+    "Parking gratis/reducido con validación de ticket"
+  ],
+  "cuisine": [
+    {
+      "name": "italian",
+      "localized_name": "Italiana"
+    },
+    {
+      "name": "seafood",
+      "localized_name": "Marisco"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [
+    {
+      "name": "sit_down",
+      "localized_name": "Sit down"
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "1"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "5"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "2"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "5"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "3"
+    }
+  ],
+  "awards": []
+}

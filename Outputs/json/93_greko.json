@@ -1,0 +1,90 @@
+{
+  "location_id": "34282926",
+  "name": "Greko",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d34282926-Reviews-Greko-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Calle 12B 0 53",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "111711",
+    "address_string": "Calle 12B 0 53, Bogotá 111711 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.596524",
+  "longitude": "-74.0691",
+  "timezone": "America/Bogota",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d34282926-Greko-Bogota.html?m=66827",
+  "num_reviews": "0",
+  "subratings": {},
+  "photo_count": "0",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d34282926-m66827-Reviews-Greko-Bogota.html#photos",
+  "features": [],
+  "cuisine": [
+    {
+      "name": "lebanese",
+      "localized_name": "Libanesa"
+    },
+    {
+      "name": "bar",
+      "localized_name": "Bar"
+    },
+    {
+      "name": "mediterranean",
+      "localized_name": "Mediterránea"
+    },
+    {
+      "name": "greek",
+      "localized_name": "Griega"
+    },
+    {
+      "name": "pub",
+      "localized_name": "Pub"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "0"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "0"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "0"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "0"
+    }
+  ],
+  "awards": []
+}

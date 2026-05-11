@@ -1,0 +1,96 @@
+{
+  "location_id": "4519873",
+  "name": "Sabores de Espana",
+  "web_url": "https://www.tripadvisor.es/Restaurant_Review-g294074-d4519873-Reviews-Sabores_de_Espana-Bogota.html?m=66827",
+  "address_obj": {
+    "street1": "Carrera 29a # 72-55",
+    "street2": "",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "postalcode": "110611",
+    "address_string": "Carrera 29a # 72-55, Bogotá 110611 Colombia"
+  },
+  "ancestors": [
+    {
+      "level": "City",
+      "name": "Bogotá",
+      "location_id": "294074"
+    },
+    {
+      "level": "Country",
+      "name": "Colombia",
+      "location_id": "294073"
+    }
+  ],
+  "latitude": "4.591135",
+  "longitude": "-74.1112",
+  "timezone": "America/Bogota",
+  "website": "http://www.paellasaboresdeespana.com",
+  "write_review": "https://www.tripadvisor.es/UserReview-g294074-d4519873-Sabores_de_Espana-Bogota.html?m=66827",
+  "ranking_data": {
+    "geo_location_id": "294074",
+    "ranking_string": "N.º 2.830 de 6.664 Sitios Para Comer en Bogotá",
+    "geo_location_name": "Bogotá",
+    "ranking_out_of": "6664",
+    "ranking": "2830"
+  },
+  "rating": "3.3",
+  "rating_image_url": "https://www.tripadvisor.es/img/cdsi/img2/ratings/traveler/3.5-66827-5.svg",
+  "num_reviews": "3",
+  "review_rating_count": {
+    "1": "1",
+    "2": "0",
+    "3": "0",
+    "4": "1",
+    "5": "1"
+  },
+  "subratings": {},
+  "photo_count": "4",
+  "see_all_photos": "https://www.tripadvisor.es/Restaurant_Review-g294074-d4519873-m66827-Reviews-Sabores_de_Espana-Bogota.html#photos",
+  "features": [],
+  "cuisine": [
+    {
+      "name": "spanish",
+      "localized_name": "Española"
+    }
+  ],
+  "category": {
+    "name": "restaurant",
+    "localized_name": "Restaurante"
+  },
+  "subcategory": [
+    {
+      "name": "sit_down",
+      "localized_name": "Sit down"
+    }
+  ],
+  "neighborhood_info": [],
+  "trip_types": [
+    {
+      "name": "business",
+      "localized_name": "De negocios",
+      "value": "0"
+    },
+    {
+      "name": "couples",
+      "localized_name": "En pareja",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "localized_name": "En solitario",
+      "value": "0"
+    },
+    {
+      "name": "family",
+      "localized_name": "En familia",
+      "value": "1"
+    },
+    {
+      "name": "friends",
+      "localized_name": "Con amigos",
+      "value": "1"
+    }
+  ],
+  "awards": []
+}
