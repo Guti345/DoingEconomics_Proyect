@@ -102,7 +102,8 @@ keep id nombre                                                          ///
      Elrestaurantegestionaactivam Utilizaalgunaherramientadei           ///
      Enlospróximos12mesescuál   Cuálcreequeseráelfactormá               ///
      Situvieraaccesofácilyeconóm                                        ///
-     encuesta_si
+     encuesta_si														///
+	 direccion lat lon
 
 
 /* =============================================================================
@@ -204,7 +205,7 @@ order encuesta_si                           ///
       p8 p9 p10 p11 p12 p12b p12c          ///
       p13 p13b p14 p16 p18                 ///
       obs1 obs2 obs3 obs4 obs5             ///
-      tripadvisor_ranking
+      tripadvisor_ranking lat lon direccion
 
 
 /* =============================================================================
