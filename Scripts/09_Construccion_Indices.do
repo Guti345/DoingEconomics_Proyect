@@ -478,3 +478,19 @@ di          "✓ tabla_indices_mapas.xlsx exportada en: ${clean}"
    IDL  max 10:  Bajo 0-3   |  Medio 4-6   |  Alto 7-10
    IPO  max 18:  Bajo 0-5   |  Medio 6-11  |  Alto 12-18
    ============================================================================= */
+   
+forvalues n=1/5 {
+	sum obs`n' if hot_zone==1
+	sum obs`n' if hot_zone==0
+}
+
+tab IPO_nivel hot_zone, r
+
+tab IPO_nivel p0a, r
+
+tab ia_adopta
+
+tab p16
+
+	
+   
