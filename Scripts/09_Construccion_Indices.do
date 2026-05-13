@@ -459,8 +459,17 @@ save "${clean}\base_indices.dta", replace
 export excel using "${clean}\tabla_indices.xlsx", ///
     firstrow(varlabels) sheet("Indices") replace
 
+
+
 di _newline "✓ base_indices.dta guardada en: ${clean}"
 di          "✓ tabla_indices.xlsx exportada en: ${clean}"
+
+* Base para mapas
+keep IRS_nivel IDL_nivel IPO_nivel encuesta_si hot_zone id nombre barrio lat lon direccion
+
+export excel using "${clean}\tabla_indices_mapas.xlsx", sheetreplace firstrow(variables) nolabel
+di          "✓ tabla_indices_mapas.xlsx exportada en: ${clean}"
+
 
 /* =============================================================================
    REFERENCIA RAPIDA DE MAXIMOS Y NIVELES DE CORTE
