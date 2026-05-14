@@ -35,16 +35,17 @@ DoingEconomics_Proyect/
 │   │   ├── restaurantes_mediterraneos_bogota.csv         # Mismo directorio en formato CSV
 │   │   ├── restaurantes_mediterraneos_bogota_classified.xlsx  # Con clasificación de cocina
 │   │   ├── base_raw.xlsx                      # Base de datos de encuestas en bruto
+|   │   ├── result_encuesta.xlsx                   # Resultados de encuestas de campo
+|   │   ├── results_encuesta.dta                   # Resultados en formato Stata
 │   │   └── Barrios_Bogota/                    # Shapefile de barrios para análisis geoespacial
 │   │
 │   ├── Clean/                                 # Datos procesados y listos para análisis
 │   ├── base_restaurantes_enriquecida_tripadvisor.xlsx    # Base enriquecida con datos de TripAdvisor
-│   ├── base_final.xlsx                        # Base de datos final consolidada
+│   ├── base_final.xlsx                        # Base de datos encuesta final consolidada
 │   ├── base_final.dta                         # Formato Stata para análisis estadístico
-│   ├── result_encuesta.xlsx                   # Resultados de encuestas de campo
-│   ├── results_encuesta.dta                   # Resultados en formato Stata
-│   ├── SECTOR.* (shapefiles)                  # Capas geoespaciales para mapas
-│   └── restaurantes_mediterraneos_bogota.csv  # Base consolidada
+│   ├── tabla_indices.xlsx                     # Base de datos final para análisis con índices
+│   ├── base_indices.dta                       # Base de datos final en formato Stata
+│   └── tabla_indices_mapas.xlsx               # Base de datos final para mapas
 │
 ├── 📁 Documentos/
 │   ├── base_datos_proyecto.xlsx               # Diccionario de variables y estructura de datos
@@ -53,21 +54,41 @@ DoingEconomics_Proyect/
 │   ├── Cuestionario - Restaurantes Mediterráneos en Bogotá.pdf  # Instrumento de recolección
 │   ├── Motivación-MarcoTeorico-Teoría del Cambio.pdf  # Fundamentación teórica
 │   ├── Guion_Audiovisual_Restaurantes_Mediterraneos.docx  # Materiales complementarios
+│   ├── Guion_Audiovisual_Mediterraneos_v2.docx  # Materiales complementarios - Nueva versión
+│   ├── Checklist_Produccion_Video_v2.docx      # Materiales complementarios 
 │   └── Reporte_Trabajo de Campo.pdf           # Informe de ejecución del trabajo de campo
 │
 ├── 📈 Outputs/
-│   ├── Graphs/                                # Visualizaciones cartográficas
+│   ├── Maps/                                # Visualizaciones cartográficas
 │   │   ├── mapa_restaurantes_mediterraneos.html  # Mapa interactivo de todos los restaurantes
-│   │   └── mapa_encuesta_campo_puntos.html      # Mapa de 41 restaurantes a encuestar
-│   │
-│   ├── Tables/                                # Tablas y estadísticas generadas
+│   │   |── mapa_encuesta_campo_puntos.html      # Mapa de 41 restaurantes a encuesta
+│   │   ├── Mapa1 Restaurantes Encuestados por tipo cocina.url  # Mapa interactivo de los restaurantes encuestados por tipo de cocina
+│   │   |── Mapa2 Nivel IRS.url      # Mapa de los restaurantes por nivel IRS
+│   │   ├── Mapa3 Nivel IDL.url  # Mapa de los restaurantes por nivel IDL
+│   │   └── Mapa4 Nivel IPO.url      # Mapa de los restaurantes por nivel IPO
+│   ├── Graphs/                                # Visualizaciones gráficos
+│   │   ├── G_dona_IDL.html  
+│   │   |── G2_cocina.html     
+│   │   ├── G3_inversion_mkt.html 
+│   │   |── G4_plataformas.html      
+│   │   ├── G5_dona_IRS.html  
+│   │   ├── G6_IRS_zona.html  
+│   │   |── G7_mix_ventas.html     
+│   │   ├── G10_dona_IPO.html 
+│   │   |── G13_adopcion_IA.html      
+│   │   ├── G13a_adopcion_IA_dona.html  
+│   │   |── G13b_herramientas_IA.html     
+│   │   ├── G14_acciones_futuras.html 
+│   │   |── G15_factor_futuro.html      
+│   │   ├── G16_app_ia.html  
+│   │   └── G17_brecha_IA.html      
 │   ├── created_data/                          # Datos intermedios creados durante análisis
+│   |   ├── links_candidatos_tripadvisor.xlsx      # Candidatos identificados en TripAdvisor
+│   |   └── links_seleccionados_tripadvisor.xlsx   # Restaurantes validados en TripAdvisor
 │   ├── logs/                                  # Registros de ejecución y errores
-│   ├── json/                                  # Datos de restaurantes en formato JSON (n=57)
-│   ├── links_candidatos_tripadvisor.xlsx      # Candidatos identificados en TripAdvisor
-│   ├── links_seleccionados_tripadvisor.xlsx   # Restaurantes validados en TripAdvisor
-│   ├── tripadvisor_api_log.xlsx               # Historial de consultas a TripAdvisor
-│   └── [restaurante_*.json]                   # Perfiles detallados por establecimiento
+|   |   └── tripadvisor_api_log.xlsx               # Historial de consultas a TripAdvisor
+│   └── json/                                  # Datos de restaurantes en formato JSON (n=57)
+|       └── [restaurante_*.json]                   # Perfiles detallados por establecimiento
 │
 └── 🐍 Scripts/
     ├── 01_extraccion_restaurantes.py          # Extracción vía Google Places API
@@ -78,7 +99,8 @@ DoingEconomics_Proyect/
     ├── 06_mapa_encuesta_campo.py              # Mapa de puntos de encuesta
     ├── 07_tripadvisor_scraper_bogota.ipynb    # Web scraping de TripAdvisor (Jupyter)
     ├── 08_Construccion_Base_Datos.do          # Construcción final en Stata
-    ├── .env                                   # Variables de entorno (API keys - no versionar)
+    ├── 09_Construccion_Indices.do          # Construcción final con indices en Stata
+    ├── 10_script_generacion_graficos.ipynb          # Construcción visualizaciones
     └── api_request_log.json                   # Log de uso de Google Places API
 ```
 
@@ -140,8 +162,8 @@ La base final consolida toda la información recolectada a través de múltiples
   - **IA_Future** (Percepción de IA) — Disposición hacia implementación de inteligencia artificial
 
 **Formatos disponibles:**
-- `base_final.xlsx` — Formato Excel para visualización y exploración
-- `base_final.dta` — Formato Stata para análisis estadístico avanzado
+- `tabla_indices.xlsx` — Formato Excel para visualización y exploración
+- `base_indices.dta` — Formato Stata para análisis estadístico avanzado
 
 **Procesos de construcción:**
 - Merge de encuestas campo + datos Google + datos TripAdvisor
@@ -260,9 +282,9 @@ La base final consolida toda la información recolectada a través de múltiples
 | **Recolección** | Trabajo de campo (encuestas) | ✅ Completada | 41 restaurantes encuestados |
 | **Enriquecimiento** | Extracción TripAdvisor | ✅ Completada | 57 restaurantes con datos adicionales |
 | **Procesamiento** | Construcción de índices (IRS, IDL, IPO, IA_Future) | ✅ Completada | Stata — Base final: 35 restaurantes |
-| **Validación** | Limpieza y consolidación final | ✅ Completada | `base_final.xlsx` / `base_final.dta` |
-| **Análisis** | Análisis estadístico exploratorio | 🔄 En progreso | Descriptivas, correlaciones, visualización |
-| **Análisis** | Modelos de regresión | 🔄 En progreso | Relación digitalización ↔ visibilidad y IA |
+| **Validación** | Limpieza y consolidación final | ✅ Completada | `tabla_indices.xlsx` / `base_indices.dta` |
+| **Análisis** | Análisis estadístico | ✅ Completada | Descriptivas, correlaciones, índices |
+| **Análisis** | Visualizaciones | ✅ Completada | Visualizaciones de los resultados |
 | **Documentación** | Informe final | ⏳ Pendiente | Síntesis de hallazgos y recomendaciones |
 
 ---
